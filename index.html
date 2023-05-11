@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ta Te Ti</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <h1>Ta Te Ti</h1>
+
+  <div id="player-input">
+    <label for="player1">Jugador 1:</label>
+    <input type="text" id="player1" placeholder="Nombre del jugador 1">
+
+    <label for="player2">Jugador 2:</label>
+    <input type="text" id="player2" placeholder="Nombre del jugador 2">
+    <br><br>
+    <button onclick="iniciarJuego()">Comenzar</button>
+  </div>
+
+  <table id="board" style="display: none;">
+    <tr>
+      <td onclick="marcarCasilla(0, 0)"></td>
+      <td onclick="marcarCasilla(0, 1)"></td>
+      <td onclick="marcarCasilla(0, 2)"></td>
+    </tr>
+    <tr>
+      <td onclick="marcarCasilla(1, 0)"></td>
+      <td onclick="marcarCasilla(1, 1)"></td>
+      <td onclick="marcarCasilla(1, 2)"></td>
+    </tr>
+    <tr>
+      <td onclick="marcarCasilla(2, 0)"></td>
+      <td onclick="marcarCasilla(2, 1)"></td>
+      <td onclick="marcarCasilla(2, 2)"></td>
+    </tr>
+  </table>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
